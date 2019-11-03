@@ -1,0 +1,9 @@
+[Unit]
+Description=Daily backup of %I
+
+[Timer]
+OnCalendar=daily
+Unit=db_backup@%i.service
+
+[Install]
+WantedBy=multi-user.target

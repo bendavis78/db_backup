@@ -1,0 +1,6 @@
+[Unit]
+Description=DB backup: %I
+
+[Service]
+User=postgres
+ExecStart=/bin/bash /usr/local/bin/db_backup.sh %i
